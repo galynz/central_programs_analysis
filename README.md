@@ -20,4 +20,4 @@ The input consists of the gene expression matrix and the weight-loss correlation
 2. **Dimension reduction**: we reduced the dimensionality of the feature matrix so that each gene is represented by a small number of dimensions.
 The resulting low-dimensional space is referred to as a ‘gene map’.
 
-![pipeline](pipeline.pdf)
+![pipeline](pipeline.png)

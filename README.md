@@ -10,11 +10,11 @@ Overall, out of 24,500 genes, 5075 genes were selected and were subsequently use
 The generation of the map proceeded in two steps:
 
 1. **Feature matrix generation**: we generated a vector of informative features for each gene.
-This information is presented in a feature matrix, which provided the value of each feature (column) in each gene (row).
-In Stage I we constructed a small set of core factors, selected to provide a comprehensive representation of the inter-individual variation in disease severity during IAV infection.
+This information is presented in a feature matrix, which provided the value of each feature (column) in each gene (row). The feature matrix is referred to as ‘core-centered co-expression matrix’.
+   In Stage I we constructed a small set of core factors, selected to provide a comprehensive representation of the inter-individual variation in disease severity during IAV infection.
 The weight-loss correlation matrix was used to guide the selection of these core factors.
 In Stage II we generated the feature matrix as a matrix of co-expression between each gene and each core factor.
-The input consists of the gene expression matrix and the weight-loss correlation matrix (excluding 3h p.i.) for the 5075 selected genes.
+The input of Stage II consists of the gene expression matrix for the 5075 selected genes and the values of core factors across individuals (excluding 3h p.i.).
 
 
 2. **Dimension reduction**: we reduced the dimensionality of the feature matrix so that each gene is represented by a small number of dimensions.

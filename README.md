@@ -3,9 +3,8 @@ Our goals were twofold: first, to construct a model relevant to the severity of 
 
 To generate a model that is relevant to the severity of IAV infection, we focused only on genes that have high relevance to disease severity, as follows: We first calculated a matrix for the Pearson’s correlation between the weight loss phenotype at 96h p.i. and the expression of each gene across all mouse strains, where each entry eij represents the correlation between the weight loss at 96h p.i. and expression of gene i in time point j across all strains (a ’weight-loss correlation matrix’, with 24,500 rows for genes and 6 columns for the different time points).
 
-Focusing on genes in which the correlation in at least one time point is high (>5th percentile or < 95th percentile), we selected those genes in which two consecutive time points had strong correlation at the same direction.
-
-Overall, out of 24,500 genes, 5075 genes were selected and were subsequently used for the construction of a map.
+Focusing on genes in which the correlation in at least one time point is high (>5th percentile or < 95th percentile), we selected those genes in which two consecutive time points had a strong correlation in the same direction.
+Overall, out of ~24,500 genes, 5075 genes were selected and were subsequently used for the construction of a map.
 
 The generation of the map proceeded in two steps:
 
@@ -21,3 +20,5 @@ The input of Stage II consists of the gene expression matrix for the 5075 select
 The resulting low-dimensional space is referred to as a ‘gene map’.
 
 ![pipeline](pipeline.png)
+
+The code also includes the T/R levels calculations.
